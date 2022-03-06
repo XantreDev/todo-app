@@ -7,5 +7,6 @@ export type Todo = {
     id: number
     title: string
     completed: boolean
+    creating?: boolean
 }
 export type Todos = Todo[]

@@ -2,30 +2,30 @@ import React from "react";
 import styles from "./Nav.module.css";
 import { Link } from "react-router-dom";
 import { NavActive } from "../../types/props";
+import Logo from "../Logo/Logo";
 
 const Nav: React.FC<{ active: NavActive }> = ({ active }) => {
     return ( 
-        <nav className="navbar is-primary" >
-        {/* //     <div className="navbar-menu is-size-5 "> */}
+        <nav className={styles.root}>
+            <div>
+                
+                <Logo className={styles.logo}/>
+                
+            </div>
+            <div className={styles.links}>
                 <Link
-                    className={
-                        (active === NavActive.index ? "has-background-info " : "") +
-                        "is-hoverable navbar-item mx-5 has-text-white"
-                    }
+                    className={styles.link}
                     to={"/"}
                 >
                     Главная
                 </Link>
                 <Link
-                    className={
-                        (active === NavActive.todo ? "has-background-info " : "") +
-                        "is-hoverable navbar-item has-text-white"
-                    }
+                    className={styles.link}
                     to={"/todo"}
                 >
                     Список дел
                 </Link>
-        {/* //     </div> */}
+            </div>
         </nav>
     );
 };

@@ -1,0 +1,33 @@
+.root {
+  display: flex;
+  width: 100%;
+  max-height: 50px;
+  padding: 0 10%;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  max-width: 48px;
+  max-height: 48px;
+  display: block;
+}
+
+.links {
+  display: flex;
+  gap: 15px;
+}
+
+.link {
+  color: black;
+  position: relative;
+  display: block;
+}
+
+
+.link:hover {
+  text-decoration: none;
+}
+
+

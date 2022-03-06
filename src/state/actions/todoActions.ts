@@ -33,4 +33,8 @@ export const changeTodoTitle = (id: number, title: string) =>
             }
         })
 
-            
+export const createTodo = () => 
+    (dispatch: RootDispatch) => 
+        dispatch({
+            type: 'todo/create-todo'
+        })

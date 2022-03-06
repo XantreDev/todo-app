@@ -23,4 +23,8 @@ interface TodoChangeTitleAction {
     }
 }
 
-export type TodoAction = TodoSetAction | TodoDeleteAction | TodoChangeTitleAction | TodoChangeStatusAction
+interface TodoCreate {
+    type: 'todo/create-todo',
+}
+
+export type TodoAction = TodoSetAction | TodoDeleteAction | TodoChangeTitleAction | TodoChangeStatusAction | TodoCreate

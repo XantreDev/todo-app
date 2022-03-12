@@ -1,0 +1,55 @@
+.root {
+  --root-height: 6.8rem;
+
+  min-height: var(--root-height);
+  
+  outline: .4rem solid var(--accent);
+  outline-offset: -.4rem;
+
+  border-radius: 25px;
+
+  background-color: var(--main);
+
+  padding: 1.8rem 3rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.input {
+  background-color: inherit;
+  border: none;
+  outline: none;
+
+  font-size: 2.1rem;
+  line-height: 3.2rem;
+
+  width: 100%;
+  color: var(--font-color);
+
+  overflow: auto;
+  overflow-wrap: break-word;
+
+  word-wrap: break-word;
+  word-break: break-all
+}
+
+.button {
+  width: 3.2rem;
+  height: 3.2rem;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .root {
+    min-height: calc(2 * var(--root-height));
+  }  
+
+  .input {
+    max-lines: 2;
+  }
+}

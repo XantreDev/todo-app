@@ -1,0 +1,9 @@
+:root {
+  /* Color scheme */
+  --main: #181820;
+  --accent: #21212B;
+
+  /* Text */
+  --text-color: #ebebeb;
+  --semitransparent-text-color: rgba(255, 255, 255, 0.65);
+}

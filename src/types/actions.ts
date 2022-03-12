@@ -25,6 +25,9 @@ interface TodoChangeTitleAction {
 
 interface TodoCreate {
     type: 'todo/create-todo',
+    payload: {
+        title: string
+    }
 }
 
 export type TodoAction = TodoSetAction | TodoDeleteAction | TodoChangeTitleAction | TodoChangeStatusAction | TodoCreate

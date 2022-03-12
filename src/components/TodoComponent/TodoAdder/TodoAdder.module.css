@@ -1,0 +1,18 @@
+.root {
+  composes: root from "./../TodoGenerics.module.css";
+}
+
+.button {
+  composes: button from "./../TodoGenerics.module.css";
+}
+
+.input {
+  composes: input from "./../TodoGenerics.module.css";
+
+  font-weight: 600;
+}
+
+.input:empty::before {
+  content: "Input Todo";
+  color: var(--semitransparent-text-color);
+}

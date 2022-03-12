@@ -1,0 +1,6 @@
+.root {
+  height: 6.8rem;
+  
+  outline: .4rem solid var(--accent);
+  outline-offset: -.4rem;
+}

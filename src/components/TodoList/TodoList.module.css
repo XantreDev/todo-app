@@ -1,36 +1,16 @@
 .root {
-  padding: 0 10%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   margin-bottom: 20px;
+
+  background-color: var(--main);
+
+  padding: 0 8.3%;
+  padding-top: 7rem;
 }
 
-.pageButtons {
-  display: flex;
-  justify-content: space-around;
-  padding: 0 10%;
-  gap: 20px;
-
- }
-
-.pageButtons > *, .addButtonRow > * {
-  cursor: pointer;
-  min-height: 50px;
-  min-width: 50px;
-  border-radius: 5px;
-  background: #00C6AD;
-  padding: 10px;
-  color: white;
-  border: none;
-  transition: background-color 100ms ease-in;
-}
-
-.pageButtons > *:hover, .addButtonRow > *:hover {
-  background-color: #00ACA8;
-}
-
-.addButtonRow {
-  display: flex;
-  justify-content: center;
+.todoCount {
+  margin-left: 1.8rem;
+  margin-bottom: -1.5rem;
 }

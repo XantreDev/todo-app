@@ -1,33 +1,77 @@
 .root {
-  display: flex;
+  background-color: #21212B;
   width: 100%;
-  max-height: 50px;
-  padding: 0 10%;
-  gap: 10px;
-  justify-content: space-between;
+  min-height: 8.4rem;
+  
+  display: flex;
+  gap: 2rem;
   align-items: center;
+  justify-content: space-between  ;
+  padding: 0 8.4%;
+
+  color: var(--text-color);
 }
 
+@media screen and (max-width: 800px) {
+  .root {
+    padding: 0 2rem;
+  }
+}
+
+.logoRoot {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logoCaption {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 3.6rem;
+}
+
+/* @media screen and (max-width: 600px) {
+  .logoCaption {
+    font-size: 2rem;
+  }
+} */
+
 .logo {
-  max-width: 48px;
-  max-height: 48px;
+  width: 48px;
+  height: 48px;
   display: block;
 }
 
 .links {
   display: flex;
-  gap: 15px;
+  gap: 5rem;
+  min-height: 3rem;
+  align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+  .links {
+    gap: 2rem;
+  }
 }
 
 .link {
-  color: black;
-  position: relative;
-  display: block;
-}
-
-
-.link:hover {
+  color: var(--text-color);
+  display: flex;
   text-decoration: none;
+
+  gap: .5rem;
 }
+
+.icon {
+  fill: var(--text-color);
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+
+/* .link:hover {
+  text-decoration: none;
+} */
 
 
